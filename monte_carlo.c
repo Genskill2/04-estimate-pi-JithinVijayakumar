@@ -42,7 +42,13 @@ int main(void) {
 }
 float mc_pi(int u)
 {
-return 0.0;
+float pie=1;
+for(int i=1;i<=u;i++)
+{
+ pie = pie*(float)(4*i*i)/(float)(4*i*i-1);
+} 
+  pie = pie * 2;
+  return pie*(0.99+frandom()/100);
 }
 
 
