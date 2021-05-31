@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <math.h>
 
+
+//bbj
 float mc_pi(int);
 
 float frandom() {
