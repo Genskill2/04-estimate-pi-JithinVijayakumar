@@ -42,13 +42,19 @@ int main(void) {
 }
 float mc_pi(int u)
 {
-float pie=1;
+float x,y,pie;int inside=0;
 for(int i=1;i<=u;i++)
 {
- pie = pie*(float)(4*i*i)/(float)(4*i*i-1);
-} 
- pie = pie * 2;
-  return pie*(0.99+frandom()/100);
+x=frandom();
+y=frandom();
+if (sqrt((float)x*x+(float)y*y)<1)
+inside=inside+1;
+}
+pie =4*((float)inside/u);
+
+ 
+  
+  return pie;
 }
 
 
