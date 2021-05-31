@@ -38,6 +38,9 @@ int main(void) {
     }
   }
 }
-
+float mc_pi(int u)
+{
+return 0;
+}
 
 
