@@ -4,17 +4,7 @@
 #include <math.h>
 
 float wallis_pi(int);
-float wallis_pi(int u)
-{
-//mmn
-  float pie=1;
-for(int i=1;i<=u;i++)
-{
- pie = pie*(float)(4*i*i)/(float)(4*i*i-1);
-} 
-  pie = pie * 2;
-  return pie;
-}
+
 
 int main(void) {
   float pi;
@@ -34,7 +24,16 @@ int main(void) {
     }
   }
 
-
-
 }
 
+float wallis_pi(int u)
+{
+
+  float pie=1;
+for(int i=1;i<=u;i++)
+{
+ pie = pie*(float)(4*i*i)/(float)(4*i*i-1);
+} 
+  pie = pie * 2;
+  return pie;
+}
